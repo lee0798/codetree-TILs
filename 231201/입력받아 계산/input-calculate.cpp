@@ -4,8 +4,8 @@ using namespace std;
 int main() {
     // 여기에 코드를 작성해주세
     int a ;
-    cin << a;
+    cin >> a;
     cout << a+2;
-    
+
     return 0;
 }
