@@ -7,6 +7,6 @@ int main() {
     string a,b;
     cin >> a >> b;
     cout <<b <,emdl;
-    cout <, a << endl;
+    cout << a << endl;
     return 0;
 }
