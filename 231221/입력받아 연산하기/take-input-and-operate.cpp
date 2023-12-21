@@ -6,7 +6,7 @@ int main() {
     cin >>a;
     cin >>b;
     cout << a+87 << endl;
-    cout << b /10 ;
+    cout << b % 10 ;
     // 여기에 코드를 작성해주세요.
     return 0;
 }
