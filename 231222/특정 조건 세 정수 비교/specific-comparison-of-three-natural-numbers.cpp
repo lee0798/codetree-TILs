@@ -13,9 +13,9 @@ int main() {
     }
 
     if (a == c && a == b) {
-        cout << 1;
+        cout << " 1";
     } else {
-        cout << 0;
+        cout << " 0";
     }
 
     return 0;
