@@ -12,7 +12,7 @@ int main() {
 			 ten = i / 10;
 		}
 		int one = i % 10;
-		if (one == 3 || one == 6 || one == 9 ||ten == 3 ||ten == 6 ||ten == 9) {
+		if (one == 3 || one == 6 || one == 9 ||ten == 3 ||ten == 6 ||ten == 9 || i % 3 ==0) {
 			cout <<"0 ";
 		}
 		else{
