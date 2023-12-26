@@ -9,7 +9,7 @@ int main() {
 	for (int i = 1; i <= a; i++) {
 		int b;
 		cin >> b;
-		if(b %3 == 0){
+		if(b %3 == 0 && b %2 ==1){
 			cout << b <<endl;
 		}
 	}
