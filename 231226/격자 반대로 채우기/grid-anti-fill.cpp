@@ -9,19 +9,20 @@ int main() {
 
 	int num = 1;
     int j = n-1;
+    int j1 = n-1-j;
     while(j >= 0){
-            if(j %2 ==0){
+            if(j1 %2 ==1){
             for(int i =0;i < n ; i ++){
                 arr_2d[i][j] = num;
                 num ++;
-            }
-        }
-        else{
+                }
+            }else{
             for(int i =n-1;i >= 0 ; i --){
                 arr_2d[i][j] = num;
                 num ++;
+                }
             }
-        }
+        j1 ++;
         j --;
     }
 
