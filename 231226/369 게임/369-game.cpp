@@ -7,7 +7,9 @@ int main() {
     cin >> a;
 
 	for (int i = 1; i <= a; i++) {
-		int ten = i / 10;
+		if(i >10){
+			int ten = i / 10;
+		}
 		int one = i % 10;
 		if (one == 3 || one == 6 || one == 9 ||ten == 3 ||ten == 6 ||ten == 9) {
 			cout <<"0 ";
