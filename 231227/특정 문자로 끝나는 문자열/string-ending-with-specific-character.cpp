@@ -16,9 +16,10 @@ int main() {
 
 
 	for (int i = 0; i < n; i++) {
-        if(a == arr[i][arr[i].length()-1])
+        if(a == arr[i][arr[i].length()-1]){
             cout << arr[i] << endl;
             cnt ++;
+        }
 	}
     if(cnt == 0)
         cout <<"None";
