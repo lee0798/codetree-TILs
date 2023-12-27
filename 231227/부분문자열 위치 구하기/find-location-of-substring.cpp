@@ -28,6 +28,9 @@ int main() {
                 break;
             }
         }
+        if(ex){
+            break;
+        }
 
 	}
 
