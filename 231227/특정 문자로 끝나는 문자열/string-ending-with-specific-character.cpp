@@ -20,7 +20,7 @@ int main() {
             cout << arr[i] << endl;
             cnt ++;
 	}
-    if(!cnt)
+    if(cnt == 0)
         cout <<"None";
 
 
