@@ -10,7 +10,7 @@ int main() {
     cin >> a;
 	int len = arr.length();
     if(a >= len){
-       for(int i = len; i >= 0 ; i --){
+       for(int i = len-1; i >= 0 ; i --){
         cout << arr[i];
        }
     }else{
