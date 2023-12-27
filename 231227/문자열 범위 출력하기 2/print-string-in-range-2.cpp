@@ -9,10 +9,15 @@ int main() {
     int a;
     cin >> a;
 	int len = arr.length();
-
-	for (int i = len-1; i >= len-a; i--) {
+    if(a >= len){
+        cout << arr;
+    }else{
+        for (int i = len-1; i >= len-a; i--) {
 		cout << arr[i];
 	}
+    }
+
+	
 
 	return 0;
 
