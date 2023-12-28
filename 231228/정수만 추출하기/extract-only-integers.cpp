@@ -26,8 +26,6 @@ int main() {
             break;
         }
     }
-    
-
 	cout << c + d;
 
 	return 0;
