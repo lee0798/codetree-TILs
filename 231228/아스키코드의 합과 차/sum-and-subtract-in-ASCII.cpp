@@ -9,7 +9,7 @@ int main() {
     cin >> s >> n; 
     int a = (int)s;
     int b = (int)n;
-    cout << a + b <<" " << b-a;
+    cout << a + b <<" " << abs(b-a);
 	
 	
 	return 0;
