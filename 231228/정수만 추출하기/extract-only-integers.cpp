@@ -17,9 +17,7 @@ int main() {
     while (i < a.length() && !isdigit(a[i])) {
         temp += a[i];
         i++;
-    }
 
-    // Reset 'temp' before accumulating digits from 'a'
     temp = "";
     while (i < a.length() && isdigit(a[i])) {
         temp += a[i];
@@ -27,8 +25,6 @@ int main() {
     }
 
     c = stoi(temp);
-
-    // Accumulate digits from 'b'
     temp2 = "";
     for (int i = 0; i < b.length(); i++) {
         if (isdigit(b[i])) {
@@ -38,7 +34,6 @@ int main() {
         }
     }
 
-    // Convert 'temp2' to integer only if it's not empty
     if (!temp2.empty()) {
         d = stoi(temp2);
     }
