@@ -25,7 +25,7 @@ int main() {
             temp += b[i];
         } else {
             d = stoi(temp);
-            break;  // 더 이상 필요하지 않은 경우 루프 종료
+            break;  
         }
     }
 
