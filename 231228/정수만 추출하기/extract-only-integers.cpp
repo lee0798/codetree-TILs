@@ -12,7 +12,6 @@ int main() {
 
     cin >> a >> b;
 
-    // Handle non-digit characters at the beginning of 'a'
     int i = 0;
     while (i < a.length() && !isdigit(a[i])) {
         temp += a[i];
