@@ -6,6 +6,7 @@ int main() {
     string a = "";
     string b = "";
     string temp = "";
+    string temp2 = "";
     int c = 0, d = 0;
 
     cin >> a >> b;
@@ -22,9 +23,9 @@ int main() {
 
     for (int i = 0; i < b.length(); i++) {
         if (isdigit(b[i])) {
-            temp += b[i];
-        } else if (!temp.empty()) {
-            d = stoi(temp);
+            temp2 += b[i];
+        } else{
+            d = stoi(temp2);
             break;  
         }
     }
