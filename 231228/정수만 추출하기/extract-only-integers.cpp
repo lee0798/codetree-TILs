@@ -13,7 +13,7 @@ int main() {
     for (int i = 0; i < a.length(); i++) {
         if (isdigit(a[i])) {
             temp += a[i];
-        } else {
+        } else if (!temp.empty()) {
             c = stoi(temp);
             temp = "";
             break;
@@ -23,7 +23,7 @@ int main() {
     for (int i = 0; i < b.length(); i++) {
         if (isdigit(b[i])) {
             temp += b[i];
-        } else {
+        } else if (!temp.empty()) {
             d = stoi(temp);
             break;  
         }
