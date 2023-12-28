@@ -17,6 +17,8 @@ int main() {
     while (i < a.length() && !isdigit(a[i])) {
         temp += a[i];
         i++;
+    }
+
 
     temp = "";
     while (i < a.length() && isdigit(a[i])) {
