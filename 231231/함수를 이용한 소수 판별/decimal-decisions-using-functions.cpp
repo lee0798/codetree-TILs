@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 bool fun(int n){
+    if(n<2)return false;
     bool is_prime = true;
     for(int i = 2; i < n ; i ++){
         if(n % i == 0)
