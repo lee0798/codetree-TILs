@@ -7,7 +7,7 @@ bool fun(int n){
     return false;
     if(n % 400 == 0)
     return true;
-    return true;
+    return false;
 }
 
 
