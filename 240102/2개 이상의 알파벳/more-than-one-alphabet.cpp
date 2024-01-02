@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool Modify(string &s) {
+bool Modify(string s) {
     int cnt = 1;
     for(int i = 0; i < s.length()-1; i ++){
         if(s[i] != s[i + 1])
