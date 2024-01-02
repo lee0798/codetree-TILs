@@ -9,7 +9,7 @@ int fun(int x, int y){
             if(i % j == 0)
                 cnt ++;
         }
-        if(cnt == 0 && i %2 == 0){
+        if(cnt == 0 && (i/10 +i%10)%2 == 0){
             cnt1++;
         }
         cnt  = 0;
