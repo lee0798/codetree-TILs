@@ -32,11 +32,12 @@ int main() {
 
     int cnt = 0;
     for (int i = 0; i < n; i++) {
-        if (sm[i])
+        if (sm[i]){
             cnt++;
-
-        if (cnt == k)
+            if (cnt == k)
             cout << words[i] << endl;
+
+        }
     }
 
     return 0;
