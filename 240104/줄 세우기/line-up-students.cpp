@@ -29,7 +29,7 @@ bool cmp(Student a, Student b) {
 int main() {
     int n;
     cin >> n;
-    Student students[10] = {};
+    Student students[1000] = {};
     for(int i = 0 ; i < n ; i ++){
         students[i].num = i+1;
         cin >> students[i].height >>  students[i].weight;
