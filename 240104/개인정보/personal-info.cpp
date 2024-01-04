@@ -29,6 +29,8 @@ int main() {
     for(int i = 0 ; i < 5 ; i ++){
         cin >> students[i].name >>  students[i].height >>  students[i].weight;
     }
+    cout << fixed;
+    cout.precision(1);
 
     sort(students, students + 5, cmp); 
     cout << "name"<< endl;
