@@ -32,8 +32,8 @@ int main() {
             day = 1;
         }
     }
-    int cnt = 1;
-    for(int i = 0; i < elapsed_days; i ++){
+    int cnt = 0;
+    for(int i = 1; i <= elapsed_days; i ++){
         if(week[i%7] == wk){
             cnt++;
         }
