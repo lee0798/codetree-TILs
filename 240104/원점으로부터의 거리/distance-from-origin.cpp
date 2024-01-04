@@ -15,7 +15,10 @@ class Student {
         Student(){}
 };
 
-bool cmp(Student a, Student b) { 
+bool cmp(Student a, Student b) {
+    if(abs(a.height) + abs(a.weight) == abs(b.height) + abs(b.weight)){
+        return a.num < b.num;
+    }
     return abs(a.height) + abs(a.weight) < abs(b.height) + abs(b.weight);
 }
 
