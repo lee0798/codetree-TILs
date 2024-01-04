@@ -5,7 +5,7 @@ int main() {
     int month , day;
     int month2 , day2;
     cin >> month >> day >> month2 >> day2;
-    int elapsed_days = 0;
+    int elapsed_days = 1;
     
     int num_of_days[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     
