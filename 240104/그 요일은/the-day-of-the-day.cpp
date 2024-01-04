@@ -18,7 +18,7 @@ int main() {
     
     int elapsed_days = 0;
     
-    int num_of_days[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    int num_of_days[13] = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     string week[7] = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
     while(true) {
         if(month == month2 && day == day2)
