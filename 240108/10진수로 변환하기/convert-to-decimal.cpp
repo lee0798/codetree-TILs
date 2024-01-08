@@ -10,7 +10,7 @@ int main() {
     int num = 0;
 
     for (int i = 0; i < binary.length(); i++) {
-        num += pow(2, i) * (n % 2);
+        num += (pow(2, i) * (n % 2));
         n /= 2;
     }
 
