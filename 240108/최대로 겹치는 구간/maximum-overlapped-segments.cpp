@@ -11,7 +11,7 @@ int main() {
         int st, end;
         cin >> st >> end;
         st += 100;
-        rnd += 100;
+        end += 100;
         for (int j = st; j < end; j++) {
             arr[j]++;
         }
