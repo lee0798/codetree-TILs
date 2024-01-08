@@ -58,12 +58,12 @@ int main() {
 
 
 
-    
-    cout << (temp_max_x - temp_min_x + 1) * (temp_max_y - temp_min_y + 1);
-    
+    if(temp_max_x == -2000 || temp_max_y == -2000 || temp_min_x == 2000 || temp_min_y == 2000){
+        cout << 0 ;
+    }else{
+        cout << (temp_max_x - temp_min_x + 1) * (temp_max_y - temp_min_y + 1);
+    }
 
-
-    
 
     return 0;
 }
