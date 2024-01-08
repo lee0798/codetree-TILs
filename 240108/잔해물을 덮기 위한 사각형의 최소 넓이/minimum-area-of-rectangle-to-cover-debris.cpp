@@ -50,11 +50,17 @@ int main() {
             }
         }
     }
-    if(temp_max_x <= temp_min_x || temp_max_y <= temp_min_y){
-        cout << 0;
-    }else{
-        cout << (temp_max_x - temp_min_x + 1) * (temp_max_y - temp_min_y + 1);
-    }
+    //cout << temp_max_x << endl;
+    //cout << temp_min_x << endl;
+    //cout << temp_max_y << endl;
+    //cout << temp_min_y << endl;
+
+
+
+
+    
+    cout << (temp_max_x - temp_min_x + 1) * (temp_max_y - temp_min_y + 1);
+    
 
 
     
