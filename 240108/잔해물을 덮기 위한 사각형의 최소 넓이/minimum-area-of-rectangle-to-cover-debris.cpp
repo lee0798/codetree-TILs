@@ -50,7 +50,7 @@ int main() {
             }
         }
     }
-    if(temp_max_x == temp_min_x || temp_max_y == temp_min_y){
+    if(temp_max_x <= temp_min_x || temp_max_y <= temp_min_y){
         cout << 0;
     }else{
         cout << (temp_max_x - temp_min_x + 1) * (temp_max_y - temp_min_y + 1);
