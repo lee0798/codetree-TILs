@@ -4,10 +4,10 @@
 using namespace std;
 
 int main() {
-    int arr[200] = {};
+    int arr[2000] = {};
     int a;
     cin >> a;
-    int temp = 100;
+    int temp = 1000;
 
     for (int i = 0; i < a; i++) {
         int st;
@@ -21,7 +21,6 @@ int main() {
                 arr[temp]++;
             }
         } else {
-            arr[temp]--;
             for(int j =0; j < st ; j ++){
                 temp--;
                 arr[temp]++;
@@ -30,7 +29,7 @@ int main() {
     }
 
     int cnt = 0;
-    for(int i = 0; i < 100; i++) {
+    for(int i = 0; i < 1000; i++) {
         if(arr[i] >= 2) {
             cnt++;
         }
