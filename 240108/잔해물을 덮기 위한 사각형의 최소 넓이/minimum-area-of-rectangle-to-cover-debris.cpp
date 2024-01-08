@@ -14,7 +14,7 @@ int main() {
     y2 += OFFSET;
     for(int j = x1 ; j < x2; j ++){
         for(int k = y1; k < y2; k ++){
-            arr[j][k] += 1;
+            arr[j][k] = 1;
         }
     }
 
