@@ -21,6 +21,7 @@ int main() {
                 arr[temp]++;
             }
         } else {
+            arr[temp]--;
             for(int j =0; j < st ; j ++){
                 temp--;
                 arr[temp]++;
