@@ -1,36 +1,40 @@
 #include <iostream>
-#include <algorithm>
-#include <string>
+#include <vector>
+
+#define MAX_N 100
+#define MAX_R 2000
+#define OFFSET 1000
+
 using namespace std;
 
 int main() {
-    int arr[2000] = {};
-    int a;
-    cin >> a;
-    int temp = 1000;
+    int n;
+    cin >> n;
 
-    for (int i = 0; i < a; i++) {
-        int st;
-        char end;  
-        cin >> st >> end;
+    int cur = 0;
+    vector<int> checked(MAX_R + 1, 0);
 
-        if (end == 'R') {
-            arr[temp] ++;
-            for(int j =0; j < st ; j ++){
-                temp++;
-                arr[temp]++;
+    for (int i = 0; i < n; i++) {
+        int distance;
+        char direction;
+        cin >> distance >> direction;
+
+        if (direction == 'L') {
+            for (int j = cur - distance + OFFSET; j < cur + OFFSET; j++) {
+                checked[j]++;
             }
+            cur -= distance;
         } else {
-            for(int j =0; j < st ; j ++){
-                temp--;
-                arr[temp]++;
+            for (int j = cur + OFFSET; j < cur + distance + OFFSET; j++) {
+                checked[j]++;
             }
+            cur += distance;
         }
     }
 
     int cnt = 0;
-    for(int i = 0; i < 1000; i++) {
-        if(arr[i] >= 2) {
+    for (int i = 0; i <= MAX_R; i++) {
+        if (checked[i] >= 2) {
             cnt++;
         }
     }
