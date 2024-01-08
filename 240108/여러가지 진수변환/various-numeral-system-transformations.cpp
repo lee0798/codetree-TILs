@@ -10,7 +10,7 @@ int main() {
     int cnt = 0;
     
     while (true) {
-        if(n < 2) {
+        if(n < a) {
             digits[cnt++] = n;
             break;
         }
