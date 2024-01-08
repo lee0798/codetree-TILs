@@ -14,12 +14,14 @@ int main() {
         char end;  
         cin >> st >> end;
 
-        for(int j = 0; j < st; j++) {
-            if (end == 'R') {
-                arr[temp]++;
+        if (end == 'R') {
+            arr[temp] ++;
+            for(int j =0; j < st ; j ++){
                 temp++;
                 arr[temp]++;
-            } else {
+            }
+        } else {
+            for(int j =0; j < st ; j ++){
                 temp--;
                 arr[temp]++;
             }
