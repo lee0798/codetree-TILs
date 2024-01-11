@@ -1,25 +1,34 @@
 #include <iostream>
 #define N 1000
 using namespace std;
+
 int main() {
     int arr[N] = {};
     int n;
     cin >> n;
-    for(int i = 0; i < n; i ++){
+
+    for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    int cnt = 0;
+
+    int cnt = 1;
     int maxc = 0;
-    for(int i = 0;i < n; i++){
-        if(i ==0 ||arr[i] == arr[i -1])
-            cnt ++;
-        if(i != 0  && arr[i] != arr[i-1])
-            if(cnt > maxc){
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] == arr[i - 1]) {
+            cnt++;
+        } else {
+            if (cnt > maxc) {
                 maxc = cnt;
-                cnt = 1;
             }
+            cnt = 1;
+        }
     }
+    if (cnt > maxc) {
+        maxc = cnt;
+    }
+
     cout << maxc;
-    // 여기에 코드를 작성해주세요.
+
     return 0;
 }
