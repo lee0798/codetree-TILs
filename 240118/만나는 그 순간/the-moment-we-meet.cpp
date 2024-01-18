@@ -46,6 +46,10 @@ int main() {
             cout << i;
             break;
         }
+        if(i == time-1){
+            cout <<-1;
+        }
     }
+
     return 0;
 }
